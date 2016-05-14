@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Taxi Press</title>
+    <meta name="description" content="HTML framework description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rufina' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizr -->
+    <script type='text/javascript' src='js/libs/modernizr-2.8.3.min.js'></script>
+
+    <!-- Semantic HTML5 Support on old IE -->
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="home">
+
+	<!-- Orange & Black -->
+	<div class="background">
+		<div class="col-6"></div>
+		<div class="col-6"></div>
+	</div>
+
+    <div id="call-us" class="call-us">
+        <div class="selected">
+            <span>Lahore</span>
+
+            <ul>
+                <li data-num="#790">Lahore</li>
+                <li data-num="#790">Islamabad (comming soon)</li>
+                <li data-num="#780">Karachi (comming soon)</li>
+                <li data-num="#740">Multan (comming soon)</li>
+            </ul>
+        </div>
+        <div class="number">+92-347-4069576</div>
+        <p>Call us any time</p>
+    </div>
+
+	<!-- Nav -->
+	<nav class="main">
+    <div class="logo">
+        
+        <%= image_tag("logo.png", :alt => "rss feed") %>
+        </div>
+
+        <div class="col-6 left">
+            <ul class="first cf">
+
+                <li><a href="booking.html">Booking</a></li>
+                <li class="dot">•</li>
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul class="second">
+                        <li><a href="services.html">Reto cab</a></li>
+                        <li><a href="services.html">VIP taxi</a></li>
+                        <li>
+                            <a href="services.html">Regular</a>
+
+                            <ul class="third">
+                                <li><a href="services.html">Reto Cab</a></li>
+                                <li><a href="services.html">VIP axi</a></li>
+                                <li><a href="services.html">Regular</a></li>
+                                <li><a href="services.html">Airport meeting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html">Airport meeting</a></li>
+                    </ul>
+                </li>
+                <li class="dot">•</li>
+                <li class="active"><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="col-6 right">
+            <ul class="first cf">
+                <li class="dot show-tablet">•</li>
+               
+                <li class="dot">•</li>
+                <li><a href="about.html">About</a></li>
+                <li class="dot">•</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- -->
+        <a href="#" class="mobile-button">Menu</a>
+        <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a>Services</a>
+                <ul class="second">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html">VIP taxi</a></li>
+                    <li>
+                        <a href="services.html">Regular</a>
+                        <ul class="third">
+                            <li><a href="services.html">Reto Cab</a></li>
+                            <li><a href="services.html">VIP axi</a></li>
+                            <li><a href="services.html">Regular</a></li>
+                            <li><a href="services.html">Airport meeting</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="booking.html">Booking</a></li>
+            <li>
+                <a>Blog</a>
+                <ul class="second">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.html">News</a></li>
+                    <li><a href="blog.html">Sport</a></li>
+                    <li><a href="blog-inside.html">Single</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+		<!-- Search -->
+		<div class="search-button"></div>
+		<form class="search" action="#">
+			<input type="text" placeholder="Search"/>
+			<input type="submit" value=" "/>
+		</form>
+
+	</nav>
+
+    <!-- Header only for HomePage -->
+    <header class="wrap cf">
+        <div class="col-6 left">
+            <div class="text">
+                <h2>
+                    There are many
+                    variations passages
+                </h2>
+                <p>
+                    There are many variations of passages of Lorem <br/>
+                    psum available, but the majority
+                </p>
+
+                <img class="car" src="css/images/car.png" alt=""/>
+            </div>
+
+        </div>
+        <div class="col-6 right">
+          <div class="cartype">
+                <input type="radio" name="radio">
+                
+            </div>
+            <div class="cartype">
+                <input type="radio" name="radio">
+            </div>
+            <div class="cf"> </div>
+            <div class="text">
+            
+                <div class="cf">
+            
+                    <div class="col-2">&nbsp;</div>
+                    <div class="col-10">
+                        <h2>Book a cab</h2>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form action="#" class="book-a-cab">
+
+                    <!-- -->
+                    <div class="cf">
+                        <div class="col-2">
+                            <label for="name">Name:</label>
+                            <label for="phone">Phone:</label>
+                        </div>
+                        <div class="col-10">
+                            <input id="name" type="text"/>
+                            <input id="phone" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="cf adress">
+                        <div class="col-2">
+                            <p>Adress:</p>
+                        </div>
+                        <div class="col-10">
+                            <a href="#" class="map">Chose on map</a>
+                            <p>London, 8417 Parker Rd</p>
+                        </div>
+                    </div>
+
+                    <!-- -->
+                    <div class="cf type">
+                        <div class="col-2">
+                            <p>Type:</p>
+                        </div>
+                        <div class="col-10">
+                            <div id="form-type">
+                                <a class="personal" href="#">Personal</a>
+                                <a class="budget" href="#">Budget</a>
+                                <a class="airport" href="#">Airport</a>
+                                <a class="truck" href="#">Truck</a>
+                            </div>
+
+                            <input type="submit" id="submit" value="Done"/>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Our Services -->
+    <section class="our-services">
+        <div class="wrap">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="columns cf">
+            <div class="col-3">
+                <div class="item">
+                    <a href="blog-inside.html">
+                    <div class="img">
+                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                    </div>
+                    </a>
+                    <div class="title">
+                        <h3>The generated Lorem</h3>
+                        <p>Contrary to popular belief</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="item">
+                    <a href="blog-inside.html">
+                    <div class="img">
+                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                    </div>
+                    </a>
+                    <div class="title">
+                        <h3>Airport meeting</h3>
+                        <p>Contrary to popular belief</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="item">
+                    <a href="blog-inside.html">
+                    <div class="img">
+                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                    </div>
+                    </a>
+                    <div class="title">
+                        <h3>The generated Lorem</h3>
+                        <p>Contrary to popular belief</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="item">
+                    <a href="blog-inside.html">
+                    <div class="img">
+                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                    </div>
+                    </a>
+                    <div class="title">
+                        <h3>Personal taxi</h3>
+                        <p>Contrary to popular belief</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="mobile">
+            <div class="wrap cf">
+                <div class="col-6">
+                    <h3>Taxi<span>Press</span> app</h3>
+
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even
+                    </p>
+
+                    <div class="store">
+                        <a class="google" href=""></a>
+                        <a class="apple" href=""></a>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <h3>Easy to use</h3>
+                            <p>There are many variations of passages</p>
+                        </li>
+                        <li>
+                            <h3>Fast responce</h3>
+                            <p>Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        </li>
+                        <li>
+                            <h3>Friendly design</h3>
+                            <p>If you are going to use a passage</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works">
+        <div class="sun"></div>
+
+        <div class="wrap">
+            <h2>How it works</h2>
+            <p>There are many variations of passages of Lorem Ipsum available</p>
+
+            <div class="list cf">
+                <div class="col-4">
+                    <div class="icon phone"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>There are many variations of passagesof Lorem Ipsum available but the majority</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon world"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>There are many variations of passagesof Lorem Ipsum available but the majority</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon truck"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>There are many variations of passagesof Lorem Ipsum available but the majority</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Suggestions-->
+    <section class="suggestions">
+        <div class="wrap cf">
+            <div class="col-6 left">
+                <form action="#">
+                    <label for="sug-name">Name:</label>
+                    <input type="text" id="sug-name"/>
+                    <label for="sug-email">Email:</label>
+                    <input type="text" id="sug-email"/>
+                    <label for="sug-message">Message:</label>
+                    <textarea name="message" id="sug-message"></textarea>
+                    <input type="submit" value="Send"/>
+                </form>
+            </div>
+            <div class="col-6 right">
+                <h2>Have any <br/><span>suggestions?</span></h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Our cars -->
+    <section class="our-cars">
+        <div class="wrap">
+            <h2>Our cars</h2>
+            <p>There are many variations of passages of Lorem Ipsum available</p>
+        </div>
+
+        <div class="wrap">
+            <div class="gallery cf">
+                <div class="col-3">
+                    <div class="slider left">
+                        <div class="img">
+                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
+                        </div>
+                        <div class="img">
+                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="slider" id="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="http://placehold.it/370x176/fcf8eb/" alt=""/>
+                                <h4>Wolksvagen <br/>
+                                    Jumpy Multispace
+                                </h4>
+                                <p>2015, $15 / km</p>
+                            </li>
+                            <li>
+                                <img src="http://placehold.it/370x176/fcf8eb/" alt=""/>
+                                <h4>Wolksvagen <br/>
+                                    Jumpy Multispace
+                                </h4>
+                                <p>2015, $15 / km</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="slider right">
+                        <div class="img">
+                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
+                        </div>
+                        <div class="img">
+                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- News & Specials -->
+	<section class="newsspecials">
+
+		<div class="wrap cf">
+			<div class="col-6 news">
+				<div class="caption">
+					<h3>News</h3>
+					<a href="blog.html">More news ›</a>
+				</div>
+
+				<!-- -->
+				<div class="content">
+
+					<!-- -->
+					<article class="cf">
+						<div class="col-3 left">
+							<h3>25</h3>
+							<span>Sep 2014</span>
+						</div>
+						<div class="col-9 right">
+							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
+							<p>
+								The generated Lorem Ipsum is therefore always free from repetition,
+								injected humour, or non-characteristic...
+							</p>
+						</div>
+					</article>
+					<!-- -->
+
+					<!-- -->
+					<article class="cf">
+						<div class="col-3 left">
+							<h3>17</h3>
+							<span>Sep 2014</span>
+						</div>
+						<div class="col-9 right">
+							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
+							<p>
+								The generated Lorem Ipsum is therefore always free from repetition,
+								injected humour, or non-characteristic...
+							</p>
+						</div>
+					</article>
+					<!-- -->
+
+					<!-- -->
+					<article class="cf">
+						<div class="col-3 left">
+							<h3>13</h3>
+							<span>Sep 2014</span>
+						</div>
+						<div class="col-9 right">
+							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
+							<p>
+								The generated Lorem Ipsum is therefore always free from repetition,
+								injected humour, or non-characteristic...
+							</p>
+						</div>
+					</article>
+					<!-- -->
+
+				</div>
+			</div>
+
+			<!-- -->
+			<div class="col-6 specials">
+				<div class="caption">
+					<h3>Specials</h3>
+					<a href="services.html">More specials ›</a>
+				</div>
+
+				<!-- -->
+				<div class="content">
+					<div class="container">
+						<div class="text">
+							<h3>All the Lorem Ipsum generators on the web</h3>
+							<p>Lorem Ipsum passages</p>
+						</div>
+					</div>
+					<div class="container">
+						<h3>Specials
+							offer</h3>
+						<div class="offer">-50%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-area"></div>
+	</section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+		<div class="content">
+			<div class="wrap cf">
+				<div class="col-4">
+					<p>
+						There are many variations of passages of Lorem Ipsum available generated Lorem Ipsum is therefore
+						always free from repetition, injected humour, or non-characteristic...
+					</p>
+					<p>
+						© 2014 Taxi Press. All rights reserved
+					</p>
+				</div>
+				<div class="col-4">
+                    <div class="call">
+						<h3>#790</h3>
+	                    <span>Call us any time</span>
+                    </div>
+				</div>
+				<div class="col-4">
+					<p>Our adress:</p>
+					<span>UK, Manchester, 8417 Parker Rd</span>
+
+                    <div class="social">
+                        <a href="https://twitter.com/alethemes" target="_blank" class="twitter"></a>
+                        <a href="https://www.facebook.com/alethemes" target="_blank" class="facebook"></a>
+                        <a href="https://www.youtube.com/user/CRIK0VA" target="_blank" class="youtube"></a>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+	    <!-- -->
+	    <div class="bottom-line">
+		    <div class="wrap">
+                <a href="blog.html">Our blog</a>
+                <div class="dot"></div>
+                <a href="contact.html">Contact form</a>
+                <div class="dot"></div>
+                <a href="about.html">About us</a>
+		    </div>
+	    </div>
+    </footer>
+
+    <!-- Libs -->
+    <script src="js/libs/jquery-1.11.3.min.js"></script>
+    <script src="js/libs/jquery.flexslider-min.js"></script>
+
+    <!-- Custom -->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        initHome();
+    </script>
+
+</body>
+</html>
