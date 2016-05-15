@@ -44,21 +44,23 @@
                 <li data-num="#740">Multan (comming soon)</li>
             </ul>
         </div>
-        <div class="number">+92-347-4069576</div>
+        <div class="number">1234</div>
         <p>Call us any time</p>
     </div>
 
+<nav class="nav navbar-default">
+    
+</nav>
 	<!-- Nav -->
 	<nav class="main">
     <div class="logo">
-        
         <%= image_tag("logo.png", :alt => "rss feed") %>
         </div>
 
         <div class="col-6 left">
             <ul class="first cf">
 
-                <li><a href="booking.html">Booking</a></li>
+                <li><a href="booking.html.erb">Booking</a></li>
                 <li class="dot">•</li>
                 <li>
                     <a href="services.html">Services</a>
@@ -113,7 +115,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="booking.html">Booking</a></li>
+            <li><a href="booking.html.erb">Booking</a></li>
             <li>
                 <a>Blog</a>
                 <ul class="second">
@@ -156,10 +158,12 @@
         <div class="col-6 right">
           <div class="cartype">
                 <input type="radio" name="radio">
-                
+            
+               
             </div>
             <div class="cartype">
                 <input type="radio" name="radio">
+                
             </div>
             <div class="cf"> </div>
             <div class="text">
@@ -178,24 +182,15 @@
                     <!-- -->
                     <div class="cf">
                         <div class="col-2">
-                            <label for="name">Name:</label>
-                            <label for="phone">Phone:</label>
+                            <label for="name">Pick up:</label>
+                            <label for="phone">Drop off:</label>
                         </div>
                         <div class="col-10">
-                            <input id="name" type="text"/>
-                            <input id="phone" type="text"/>
+                    <input id="name" type="text" style="background-color:white; border-radius:10px;" />
+                 <input id="phone" type="text" style="background-color:white; border-radius:10px;"/>
                         </div>
                     </div>
 
-                    <div class="cf adress">
-                        <div class="col-2">
-                            <p>Adress:</p>
-                        </div>
-                        <div class="col-10">
-                            <a href="#" class="map">Chose on map</a>
-                            <p>London, 8417 Parker Rd</p>
-                        </div>
-                    </div>
 
                     <!-- -->
                     <div class="cf type">
@@ -205,12 +200,12 @@
                         <div class="col-10">
                             <div id="form-type">
                                 <a class="personal" href="#">Personal</a>
-                                <a class="budget" href="#">Budget</a>
-                                <a class="airport" href="#">Airport</a>
-                                <a class="truck" href="#">Truck</a>
+                                <a class="budget" href="#">Family</a>
+                                <a class="airport" href="#">Ladies</a>
+
                             </div>
 
-                            <input type="submit" id="submit" value="Done"/>
+                            <input type="submit" id="submit" value="Cost" style="width:100px;" />
                         </div>
                     </div>
                 </form>
@@ -227,19 +222,7 @@
         </div>
 
         <div class="columns cf">
-            <div class="col-3">
-                <div class="item">
-                    <a href="blog-inside.html">
-                    <div class="img">
-                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
-                    </div>
-                    </a>
-                    <div class="title">
-                        <h3>The generated Lorem</h3>
-                        <p>Contrary to popular belief</p>
-                    </div>
-                </div>
-            </div>
+            
             <div class="col-3">
                 <div class="item">
                     <a href="blog-inside.html">
@@ -378,151 +361,11 @@
 
 
     <!-- Our cars -->
-    <section class="our-cars">
-        <div class="wrap">
-            <h2>Our cars</h2>
-            <p>There are many variations of passages of Lorem Ipsum available</p>
-        </div>
-
-        <div class="wrap">
-            <div class="gallery cf">
-                <div class="col-3">
-                    <div class="slider left">
-                        <div class="img">
-                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
-                        </div>
-                        <div class="img">
-                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="slider" id="slider">
-                        <ul class="slides">
-                            <li>
-                                <img src="http://placehold.it/370x176/fcf8eb/" alt=""/>
-                                <h4>Wolksvagen <br/>
-                                    Jumpy Multispace
-                                </h4>
-                                <p>2015, $15 / km</p>
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/370x176/fcf8eb/" alt=""/>
-                                <h4>Wolksvagen <br/>
-                                    Jumpy Multispace
-                                </h4>
-                                <p>2015, $15 / km</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="slider right">
-                        <div class="img">
-                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
-                        </div>
-                        <div class="img">
-                            <img src="http://placehold.it/240x232/fcf8eb/" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
 
 	<!-- News & Specials -->
-	<section class="newsspecials">
-
-		<div class="wrap cf">
-			<div class="col-6 news">
-				<div class="caption">
-					<h3>News</h3>
-					<a href="blog.html">More news ›</a>
-				</div>
-
-				<!-- -->
-				<div class="content">
-
-					<!-- -->
-					<article class="cf">
-						<div class="col-3 left">
-							<h3>25</h3>
-							<span>Sep 2014</span>
-						</div>
-						<div class="col-9 right">
-							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
-							<p>
-								The generated Lorem Ipsum is therefore always free from repetition,
-								injected humour, or non-characteristic...
-							</p>
-						</div>
-					</article>
-					<!-- -->
-
-					<!-- -->
-					<article class="cf">
-						<div class="col-3 left">
-							<h3>17</h3>
-							<span>Sep 2014</span>
-						</div>
-						<div class="col-9 right">
-							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
-							<p>
-								The generated Lorem Ipsum is therefore always free from repetition,
-								injected humour, or non-characteristic...
-							</p>
-						</div>
-					</article>
-					<!-- -->
-
-					<!-- -->
-					<article class="cf">
-						<div class="col-3 left">
-							<h3>13</h3>
-							<span>Sep 2014</span>
-						</div>
-						<div class="col-9 right">
-							<h2><a href="blog-inside.html">There are many variations of passages of Lorem Ipsum available</a></h2>
-							<p>
-								The generated Lorem Ipsum is therefore always free from repetition,
-								injected humour, or non-characteristic...
-							</p>
-						</div>
-					</article>
-					<!-- -->
-
-				</div>
-			</div>
-
-			<!-- -->
-			<div class="col-6 specials">
-				<div class="caption">
-					<h3>Specials</h3>
-					<a href="services.html">More specials ›</a>
-				</div>
-
-				<!-- -->
-				<div class="content">
-					<div class="container">
-						<div class="text">
-							<h3>All the Lorem Ipsum generators on the web</h3>
-							<p>Lorem Ipsum passages</p>
-						</div>
-					</div>
-					<div class="container">
-						<h3>Specials
-							offer</h3>
-						<div class="offer">-50%</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="bottom-area"></div>
-	</section>
-
-
+	
     <!-- Footer -->
     <footer id="footer">
 		<div class="content">
@@ -532,13 +375,13 @@
 						There are many variations of passages of Lorem Ipsum available generated Lorem Ipsum is therefore
 						always free from repetition, injected humour, or non-characteristic...
 					</p>
-					<p>
-						© 2014 Taxi Press. All rights reserved
+					<p style="color:blue;">
+						© 2016 Pick Me. All rights reserved
 					</p>
 				</div>
 				<div class="col-4">
                     <div class="call">
-						<h3>#790</h3>
+						<h3>1234</h3>
 	                    <span>Call us any time</span>
                     </div>
 				</div>
