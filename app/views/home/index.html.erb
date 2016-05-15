@@ -60,7 +60,7 @@
         <div class="col-6 left">
             <ul class="first cf">
 
-                <li><a href="booking.html.erb">Booking</a></li>
+                <li><%=link_to "Reservation", new_reserve_path%></li>
                 <li class="dot">•</li>
                 <li>
                     <a href="services.html">Services</a>
@@ -81,7 +81,7 @@
                     </ul>
                 </li>
                 <li class="dot">•</li>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><%=link_to "Home", "/home/index"%></li>
             </ul>
         </div>
         <div class="col-6 right">
@@ -98,7 +98,7 @@
         <!-- -->
         <a href="#" class="mobile-button">Menu</a>
         <ul class="mobile-menu">
-            <li><a href="index.html">Home</a></li>
+            <li><%=link_to "Home", "/home/index"%></li>
             <li>
                 <a>Services</a>
                 <ul class="second">
@@ -115,7 +115,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="booking.html.erb">Booking</a></li>
+            <li><%=link_to "Reservation", new_reserve_path %></li>
             <li>
                 <a>Blog</a>
                 <ul class="second">
