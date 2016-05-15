@@ -733,7 +733,6 @@ nav.main:before {
 nav.main .logo {
   display: block;
   position: absolute;
-  background: url("images/logo.png") no-repeat center;
   width: 235px;
   height: 93px;
   left: 50%;
@@ -1364,10 +1363,12 @@ body.home section.our-services h2:after {
 }
 body.home section.our-services .columns {
   margin-top: 60px;
+  margin-left: 105px;
   /* Item */
 }
 body.home section.our-services .columns .col-3 {
   padding: 0 2px;
+  margin-left: 50px;
 }
 body.home section.our-services .columns .item {
   width: 100%;
@@ -1411,6 +1412,7 @@ body.home section.our-services .columns .item .title {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   position: relative;
+  text-align: center;
   background: #ffffff url("images/icons/arrow-right.png") no-repeat 95% center;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
@@ -1427,6 +1429,7 @@ body.home section.our-services .columns .item .title h3 {
 body.home section.our-services .columns .item .title p {
   font-size: 12px;
   color: #898989;
+  text-align: center;
 }
 body.home section.our-services .columns .item:hover .img:after {
   background: none;
@@ -3170,7 +3173,14 @@ body.blog .pagination {
 }
 body.blog .pagination .col-10 {
   text-align: center;
+  bor
 }
+
+body.blog .pagination .col-10 h2{
+  
+  font-family: 'Playfair Display', serif;
+}
+
 body.blog .pagination .col-10 a {
   display: inline-block;
   height: 85px;
@@ -4867,7 +4877,13 @@ body.blog-inside .leave-a-comment input[type='submit'] {
 .cartype{
   
   height: 20px;
-  margin-left: 40px;
+  margin-left: 140px;
 
   float: left;
+}
+
+.cartypeicon{
+
+  width: 20px;
+  height: 20px;
 }
