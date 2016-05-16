@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
+  get 'about/index'
+
+  get 'services/index'
+
   get 'home/index'
 
   devise_for :users
@@ -59,5 +65,8 @@ Rails.application.routes.draw do
   root to: "home#index"
   resources :home
   resources :reserve
+  resources :services
+  resources :about
+  resources :contact
   
 end

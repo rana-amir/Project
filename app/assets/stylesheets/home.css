@@ -4887,3 +4887,10 @@ body.blog-inside .leave-a-comment input[type='submit'] {
   width: 20px;
   height: 20px;
 }
+
+.loginsec{
+ width: 350px;
+ height: 170px;
+ background-color: yellow;
+
+}

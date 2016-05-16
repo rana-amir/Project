@@ -34,16 +34,7 @@
 	</div>
 
     <div id="call-us" class="call-us">
-         <div class="selected">
-            <span>Lahore</span>
-
-            <ul>
-                <li data-num="#790">Lahore</li>
-                <li data-num="#790">Islamabad (comming soon)</li>
-                <li data-num="#780">Karachi (comming soon)</li>
-                <li data-num="#740">Multan (comming soon)</li>
-            </ul>
-        </div>
+         
         <div class="selected">
             <span>Lahore</span>
 
@@ -54,7 +45,7 @@
                 <li data-num="#740">Multan (comming soon)</li>
             </ul>
         </div>
-       <div class="number">#790</div>
+       <div class="number">1234</div>
         <p>Call us any time</p>
     </div>
 
@@ -69,7 +60,7 @@
                 <li class="active"><%=link_to "Reservation", new_reserve_path%></li>
                 <li class="dot">•</li>
                 <li>
-                    <a href="services.html">Services</a>
+                   <%=link_to "Services", services_path%>
                     <ul class="second">
                         <li><a href="services.html">Reto cab</a></li>
                         <li><a href="services.html">VIP taxi</a></li>
@@ -93,18 +84,13 @@
         <div class="col-6 right">
             <ul class="first cf">
                 <li class="dot show-tablet">•</li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                    <ul class="second">
-                        <li><a href="blog.html">News</a></li>
-                        <li><a href="blog.html">Sport</a></li>
-                        <li><a href="blog-inside.html">Single</a></li>
-                    </ul>
-                </li>
+               
+            
+                <li><%=link_to "About", "/about/index"%></li>
                 <li class="dot">•</li>
-                <li><a href="about.html">About</a></li>
+                <li><%=link_to "Contact", "/contact/index"%></li>
                 <li class="dot">•</li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>Log In</li>
             </ul>
         </div>
 
@@ -157,11 +143,7 @@
         <section class="content">
 
             <h2>Book a Cab</h2>
-            <div class="breadcrumb">
-                <a href="index.html">Homepage</a>
-                <div class="line"></div>
-                <a href="booking.html">Booking</a>
-            </div>
+            
 
 
             <!-- -->
