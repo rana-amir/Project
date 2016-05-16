@@ -63,21 +63,12 @@
                 <li><%=link_to "Reservation", new_reserve_path%></li>
                 <li class="dot">•</li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <%=link_to "Services", services_path%>
                     <ul class="second">
-                        <li><a href="services.html">Reto cab</a></li>
-                        <li><a href="services.html">VIP taxi</a></li>
-                        <li>
-                            <a href="services.html">Regular</a>
-
-                            <ul class="third">
-                                <li><a href="services.html">Reto Cab</a></li>
-                                <li><a href="services.html">VIP axi</a></li>
-                                <li><a href="services.html">Regular</a></li>
-                                <li><a href="services.html">Airport meeting</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="services.html">Airport meeting</a></li>
+                        <li><%=link_to "Personal", services_path%></li>
+                        <li><%=link_to "Ladies", services_path%></li>
+                        <li><%=link_to "Family", services_path%></li>
+                        
                     </ul>
                 </li>
                 <li class="dot">•</li>
@@ -88,12 +79,23 @@
             <ul class="first cf">
                 <li class="dot show-tablet">•</li>
                
+                
+                <li><%=link_to "About", "/about/index"%></li>
                 <li class="dot">•</li>
-                <li><a href="about.html">About</a></li>
+                <li><%=link_to "Contact", "/contact/index"%></li>
                 <li class="dot">•</li>
-                <li><a href="contact.html">Contact</a></li>
+                <div id="login">
+                <li>Log In</li></div>
             </ul>
         </div>
+
+     <!-- Log in section 
+     <div class="loginsec">
+         
+     <h1>
+         Login in
+     </h1>
+     </div>-->
 
         <!-- -->
         <a href="#" class="mobile-button">Menu</a>
@@ -125,8 +127,8 @@
                     <li><a href="blog-inside.html">Single</a></li>
                 </ul>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><%=link_to "About", "/about/index"%></li>
+            <li><%=link_to "Contact", "/contact/index"%></li>
         </ul>
 
 		<!-- Search -->
@@ -227,11 +229,11 @@
                 <div class="item">
                     <a href="blog-inside.html">
                     <div class="img">
-                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                         <%= image_tag("Personal.jpg", :alt => "rss feed") %>
                     </div>
                     </a>
                     <div class="title">
-                        <h3>Airport meeting</h3>
+                        <h3>Personal</h3>
                         <p>Contrary to popular belief</p>
                     </div>
                 </div>
@@ -240,11 +242,11 @@
                 <div class="item">
                     <a href="blog-inside.html">
                     <div class="img">
-                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                        <%= image_tag("Family.jpg", :alt => "rss feed") %>
                     </div>
                     </a>
                     <div class="title">
-                        <h3>The generated Lorem</h3>
+                        <h3>Family</h3>
                         <p>Contrary to popular belief</p>
                     </div>
                 </div>
@@ -253,11 +255,11 @@
                 <div class="item">
                     <a href="blog-inside.html">
                     <div class="img">
-                        <img src="http://placehold.it/478x177/fcf8eb/" alt=""/>
+                        <%= image_tag("Ladies.jpg", :alt => "rss feed") %>
                     </div>
                     </a>
                     <div class="title">
-                        <h3>Personal taxi</h3>
+                        <h3>Ladies</h3>
                         <p>Contrary to popular belief</p>
                     </div>
                 </div>
@@ -420,6 +422,13 @@
     <script>
         initHome();
     </script>
+
+<script>
+$(document).ready(function(){
+$( "#login" ).click(function() {
+  $( "#login" ).hide( "drop", { direction: "down" }, "slow" );
+}});
+</script>
 
 </body>
 </html>
