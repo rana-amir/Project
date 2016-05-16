@@ -6,4 +6,6 @@ class Reservation < ActiveRecord::Base
 	validates :from, presence: true
 	validates :status, presence: true
 	validates :Reservation_type, presence: true
-end
+	# geocoded_by :to, :from
+	# after_validation :geocode #:if => to_changed?
+end 

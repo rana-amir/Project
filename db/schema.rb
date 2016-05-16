@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160515193018) do
+ActiveRecord::Schema.define(version: 20160516122401) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "dname"
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(version: 20160515193018) do
     t.datetime "updated_at",       null: false
     t.string   "status"
     t.string   "Reservation_type"
+    t.float    "flongitude"
+    t.float    "flatitude"
+    t.float    "tlongitude"
+    t.float    "tlatitude"
   end
 
   create_table "user_types", force: :cascade do |t|
